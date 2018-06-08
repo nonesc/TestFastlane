@@ -8,15 +8,15 @@ jobs:
    macos:
     xcode: "9.3.0"
 
-  steps:
-    - checkout
+    steps:
+      - checkout
 
-    - run:
-        name: install bundle
-        command: bundle install
+      - run:
+          name: install bundle
+          command: bundle install
 
-    - run:
-        name: fastlane build hockey
-        command: bundle exec fastlane build_hockey
+      - run:
+          name: fastlane build hockey
+          command: bundle exec fastlane build_hockey
 
      
