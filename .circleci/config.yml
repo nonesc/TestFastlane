@@ -1,7 +1,24 @@
-language: objective-c
-os: osx
-osx_image: xcode9.3
-install:
-  - bundle install
-script:
-  - bundle exec fastlane build_hockey
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+   macos:
+    xcode: "9.3"
+
+  steps:
+    - checkout
+
+    - run:
+        name: install bundle
+        command: |
+          bundle install
+
+    - run:
+        name: fastlane build hockey
+        command: |
+          bundle exec fastlane build_hockey
+
+     
