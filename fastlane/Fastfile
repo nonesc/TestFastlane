@@ -41,6 +41,10 @@ default_platform(:ios)
 lane :build_hockey do
   increment_build_number
 
+   match(type: "adhoc",
+    readonly: true
+  )
+
   gym(scheme: "TestFastlane",
       clean: true,
       export_options: {
