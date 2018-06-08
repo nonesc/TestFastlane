@@ -13,12 +13,10 @@ jobs:
 
     - run:
         name: install bundle
-        command: |
-          bundle install
+        command: bundle install
 
     - run:
         name: fastlane build hockey
-        command: |
-          bundle exec fastlane build_hockey
+        command: bundle exec fastlane build_hockey
 
      
