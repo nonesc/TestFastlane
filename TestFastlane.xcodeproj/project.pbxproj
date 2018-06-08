@@ -281,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GXCN6SHD4F;
 				INFOPLIST_FILE = TestFastlane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +294,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "match Development non.TestFastlane";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -300,7 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = GXCN6SHD4F;
 				INFOPLIST_FILE = TestFastlane/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,10 +313,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = non.TestFastlane;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "87348ee4-600e-4279-9494-e46f60884c15";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development non.TestFastlane";
+				PROVISIONING_PROFILE = "383569d9-ce03-4c30-8f68-7ebd6ee0ac8f";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc non.TestFastlane";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

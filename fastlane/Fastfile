@@ -15,9 +15,43 @@
 
 default_platform(:ios)
 
-platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+
+  lane :match_read do
+    match(type: "adhoc",
+	  readonly: true
+  )
+
+  match(type: "development",
+	  readonly: true
+  )
   end
+
+  lane :match_force do
+ 
+  match(type: "adhoc",
+	force: true
+  )
+
+  match(type: "development",
+	force: true
+  )
+   
+  end
+
+lane :build_hockey do
+  increment_build_number
+
+  gym(scheme: "TestFastlane",
+      clean: true,
+      export_options: {
+         method: "ad-hoc",
+      }
+  )
+  
+  hockey(
+    api_token: "b061573721f54ba6b585b23980d47633", 
+  )
+
 end
+
+
