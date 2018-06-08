@@ -7,6 +7,5 @@ type("development") # The default type, can be: appstore, adhoc, enterprise or d
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options
-username "sd-mobilesolutions@mfec.co.th"
-team_id "GXCN6SHD4F"
+
 app_identifier ["non.TestFastlane"]
