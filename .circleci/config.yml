@@ -1,22 +1,20 @@
-# Ruby CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-ruby/ for more details
-#
 version: 2
 jobs:
   build:
-   macos:
-    xcode: "9.3.0"
+
+    # Specify the Xcode version to use
+    macos:
+      xcode: "9.3.0"
 
     steps:
       - checkout
 
+      # Install bundle
       - run:
-          name: install bundle
+          name: Install 
           command: bundle install
 
+      # Build the app and run tests
       - run:
-          name: fastlane build hockey
+          name: Build and run tests
           command: bundle exec fastlane build_hockey
-
-     
