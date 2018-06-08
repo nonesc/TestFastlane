@@ -1,0 +1,6 @@
+osx_image: xcode9.3
+install:
+  -bundle install
+
+script:
+  -bundle exec fastlane build_hockey
