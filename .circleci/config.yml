@@ -14,13 +14,6 @@ jobs:
           name: Install 
           command: bundle install
 
-      - add_ssh_keys:
-          fingerprints: "96:e6:46:b1:5c:f0:f0:10:7e:e9:f9:ca:ef:7d:a1:90"
-
-      - run:
-          name: Fix host authenticity for gitlab.com
-          command: ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
-
       # Build the app and run tests
       - run:
           name: Build and run tests
