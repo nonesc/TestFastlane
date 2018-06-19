@@ -51,9 +51,7 @@ lane :build_hockey do
  
   gym(scheme: "TestFastlane",
       clean: true,
-      export_options: {
-         method: "ad-hoc",
-      }
+      export_method: "ad-hoc"
   )
   
   # hockey(
