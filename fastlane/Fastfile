@@ -47,7 +47,8 @@ lane :build_hockey do
 
    match(type: "adhoc",
     force: true,
-    readonly: false
+    readonly: false,
+    verbose: true
   )
  
   gym(scheme: "TestFastlane",
