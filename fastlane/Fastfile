@@ -46,7 +46,8 @@ lane :build_hockey do
   increment_build_number
 
    match(type: "adhoc",
-    force: true
+    force: true,
+    readonly: false
   )
  
   gym(scheme: "TestFastlane",
